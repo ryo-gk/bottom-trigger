@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "esnext",
+    "module": "ES2015",
+    "skipLibCheck": true,
+    "allowJs": true,
+  },
+  "include": [
+    "lib/**/*"
+  ]
+}

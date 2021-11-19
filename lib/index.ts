@@ -1,0 +1,1 @@
+export { bottomTrigger } from './bottomTrigger'
