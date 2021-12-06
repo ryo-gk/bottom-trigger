@@ -19,7 +19,7 @@ export default [
         sourcemap: true,
       },
       {
-        file: pkg.browser.replace('.js', '.min.js'),
+        file: pkg.unpkg,
         format: 'iife',
         plugins: [
           terser()

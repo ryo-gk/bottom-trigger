@@ -6,21 +6,32 @@
   "types": "types/bottom-trigger.d.ts",
   "module": "dist/bottom-trigger.es.js",
   "browser": "dist/bottom-trigger.js",
+  "unpkg": "dist/bottom-trigger.min.js",
   "scripts": {
-    "build": "rollup -c"
+    "serve": "vite",
+    "build": "rollup -c",
+    "lint": "prettier --check --write --parser typescript \"{lib,example}/**/*.{js,ts}\"",
+    "lint:fail": "prettier --check --parser typescript \"{lib,example}/**/*.{js,ts}\""
   },
   "keywords": [
+    "scroll",
     "scroll-bottom"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryo-gk/bottom-trigger.git"
+  },
+  "author": "ryo-gk",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.11.7",
     "esbuild": "^0.13.14",
+    "prettier": "^2.5.1",
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-esbuild": "^4.7.0",
     "rollup-plugin-terser": "^7.0.2",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.2",
+    "vite": "^2.6.14"
   }
 }

@@ -1,0 +1,42 @@
+body {
+  background-color: #e3e3e3;
+}
+
+.container {
+  width: 70%;
+  margin: 64px auto 0px;
+}
+
+.contract {
+  height: 70vh;
+  margin-bottom: 8px;
+  padding: 16px 32px;
+  background-color: #FFFFFF;
+  overflow-y: scroll;
+}
+
+.contents {
+  line-height: 24px;
+}
+
+.actions {
+  display: flex;
+  justify-content: right;
+  padding: 0 16px;
+}
+
+#agree-button {
+  height: 36px;
+  background-color: #007FFF; 
+  color: #FFFFFF;
+  padding: 0px 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#agree-button:disabled {
+  background-color: #73b3fc;
+  cursor: not-allowed;
+}
